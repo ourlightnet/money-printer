@@ -36,12 +36,12 @@ def _provider_label(url: str) -> str:
 
 
 st.set_page_config(
-    page_title="ETH Congestion Monitor",
+    page_title="Money Printer",
     page_icon="📈",
     layout="wide",
 )
 
-st.title("Ethereum Congestion Monitor")
+st.title("Money Printer")
 st.caption("SUPT d_ij prototype monitor with simulation mode and optional live Ethereum mode.")
 
 with st.sidebar:

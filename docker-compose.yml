@@ -1,7 +1,7 @@
 services:
   eth-monitor-dashboard:
     build: .
-    container_name: eth_congestion_monitor_dashboard
+    container_name: money_printer_dashboard
     command: streamlit run dashboard.py --server.address=0.0.0.0 --server.port=8501
     ports:
       - "8501:8501"
@@ -25,7 +25,7 @@ services:
 
   eth-monitor-api:
     build: .
-    container_name: eth_congestion_monitor_api
+    container_name: money_printer_api
     command: python -m uvicorn app.main:app --host 0.0.0.0 --port 8000
     ports:
       - "8001:8000"
@@ -44,7 +44,7 @@ services:
 
   eth-monitor-agent:
     build: .
-    container_name: eth_regime_agent
+    container_name: money_printer_regime_agent
     command: python scripts/run_agent.py
     env_file:
       - .env
@@ -62,7 +62,7 @@ services:
 
   eth-monitor-counterfactual:
     build: .
-    container_name: eth_counterfactual_logger
+    container_name: money_printer_counterfactual_logger
     command: python scripts/run_counterfactual_logger.py
     env_file:
       - .env
@@ -80,7 +80,7 @@ services:
 
   eth-monitor-paper:
     build: .
-    container_name: eth_paper_execution_logger
+    container_name: money_printer_paper_execution_logger
     command: python scripts/run_paper_execution.py
     env_file:
       - .env

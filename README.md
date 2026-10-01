@@ -1,4 +1,4 @@
-# Execution Intelligence Working System
+# Money Printer
 
 A working execution-intelligence and blockchain/digital-asset market monitoring system designed to evaluate market conditions, evidence quality, policy trust, risk, position sizing, and execution decisions before capital is committed.
 
@@ -12,7 +12,7 @@ The system is intentionally conservative. A `NO_ACTION` decision or `$0` allocat
 
 The objective is not simply to build another system that generates trading signals.
 
-The Execution Intelligence Platform is being designed to answer a more important set of questions:
+Money Printer is being designed to answer a more important set of questions:
 
 - Should this signal be trusted?
 - How much evidence supports it?
@@ -430,7 +430,7 @@ This is important for operator trust, debugging, research, governance, and futur
 # Project Structure
 
 ```text
-execution-intelligence-working-system/
+money-printer/
 │
 ├── app/
 │   ├── api/
@@ -596,13 +596,13 @@ Open a terminal.
 Run:
 
 ```bash
-git clone https://github.com/obadoni2/execution-intelligence-working-system.git
+git clone https://github.com/ourlightnet/money-printer.git
 ```
 
 Enter the project:
 
 ```bash
-cd execution-intelligence-working-system
+cd money-printer
 ```
 
 ---
@@ -663,7 +663,7 @@ Open a web browser and visit:
 http://localhost:8501
 ```
 
-This opens the main Execution Intelligence dashboard.
+This opens the main Money Printer dashboard.
 
 ---
 
@@ -698,9 +698,9 @@ to see the currently exposed ports.
 For someone who simply wants to run the project:
 
 ```bash
-git clone https://github.com/obadoni2/execution-intelligence-working-system.git
+git clone https://github.com/ourlightnet/money-printer.git
 
-cd execution-intelligence-working-system
+cd money-printer
 
 cp .env.example .env
 
@@ -920,7 +920,7 @@ Next.js / TypeScript
         +
 Docker
         =
-Full-Stack Execution Intelligence Platform
+Full-Stack Money Printer
 ```
 
 The goal is **not** to throw away working intelligence modules.
@@ -1009,7 +1009,7 @@ The objective is to build evidence before increasing trust or capital exposure.
 
 X: `@PaulSheppard_C`
 
-The proprietary algorithm and underlying core framework form the analytical backbone of the Execution Intelligence Platform.
+The proprietary algorithm and underlying core framework form the analytical backbone of Money Printer.
 
 The execution-intelligence architecture is designed to preserve that backbone while adding evidence validation, risk controls, policy governance, execution orchestration, and outcome feedback around it.
 
@@ -1049,7 +1049,7 @@ Operator Application
 
 # Current Stage
 
-The Execution Intelligence Working System has progressed from research and simulation into live-market testing and validation.
+Money Printer has progressed from research and simulation into live-market testing and validation.
 
 The current focus is validating the complete pipeline against real market conditions:
 
@@ -1064,8 +1064,8 @@ The system will continue accumulating live evidence, execution outcomes, and per
 If Docker and Git are already installed:
 
 ```bash
-git clone https://github.com/obadoni2/execution-intelligence-working-system.git
-cd execution-intelligence-working-system
+git clone https://github.com/ourlightnet/money-printer.git
+cd money-printer
 cp .env.example .env
 docker compose up -d --build
 ```
@@ -1076,4 +1076,4 @@ Then open:
 http://localhost:8501
 ```
 
-Welcome to the Execution Intelligence Working System.
+Welcome to Money Printer.
